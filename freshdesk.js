@@ -25,7 +25,7 @@
             alias: "type",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "shirt size",
+            id: "shirtsize",
             alias: "shirt size",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -45,11 +45,11 @@
             alias: "due by",
             dataType: tableau.dataTypeEnum.date
         }, {
-            id: "fr due",
+            id: "frdue",
             alias: "fr due by",
             dataType: tableau.dataTypeEnum.date
         }, {
-            id: "nr due",
+            id: "nrdue",
             alias: "nr due by",
             dataType: tableau.dataTypeEnum.date
         }, {
@@ -57,11 +57,11 @@
             alias: "escalated",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "fr escalated",
+            id: "frescalated",
             alias: "fr escalated",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "nr escalated",
+            id: "nrescalated",
             alias: "nr escalated",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -69,7 +69,7 @@
             alias: "review",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "internally escalated",
+            id: "internallyescalated",
             alias: "internally escalated",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -77,7 +77,7 @@
             alias: "status",
             dataType: tableau.dataTypeEnum.float
         }, {
-            id: "group id",
+            id: "groupid",
             alias: "group id",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -101,39 +101,39 @@
             alias: "fwd emails",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "reply_cc",
+            id: "replycc",
             alias: "reply cc emails",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "ticket_cc",
+            id: "ticketcc",
             alias: "ticket cc",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "requester_id",
+            id: "requesterid",
             alias: "requester id",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "responder_id",
+            id: "responderid",
             alias: "responder id",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "company_id",
+            id: "companyid",
             alias: "company id",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "support_email",
+            id: "supportemail",
             alias: "support email",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "to_emails",
+            id: "toemails",
             alias: "to emails",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "product_id",
+            id: "productid",
             alias: "product id",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "association_type",
+            id: "associationtype",
             alias: "association type",
             dataType: tableau.dataTypeEnum.string
         }, {
@@ -141,11 +141,11 @@
             alias: "spam",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "email_config_id",
+            id: "emailconfigid",
             alias: "email config id",
             dataType: tableau.dataTypeEnum.string
         }, {
-            id: "associated_tickets_count",
+            id: "associatedticketscount",
             alias: "associated tickets count",
             dataType: tableau.dataTypeEnum.string
         }, ];
@@ -189,37 +189,37 @@
                             "org": tickets[i].custom_fields.cf_affected_customers,
                             "subject": tickets[i].subject,
                             "type": tickets[i].type,
-                            "shirt size": tickets[i].custom_fields.cf_cs_shirt_size,
+                            "shirtsize": tickets[i].custom_fields.cf_cs_shirt_size,
                             "severity": tickets[i].custom_fields.cf_severity,
                             "priority": tickets[i].priority,
                             "source": tickets[i].source,
                             "due": tickets[i].due_by,
-                            "fr due": tickets[i].fr_due_by,
-                            "nr due": tickets[i].nr_due_by,
+                            "frdue": tickets[i].fr_due_by,
+                            "nrdue": tickets[i].nr_due_by,
                             "escalated": tickets[i].fr_escalated,
-                            "fr escalated": tickets[i].fr_escalated,
-                            "nr escalated": tickets[i].nr_escalated,
+                            "frescalated": tickets[i].fr_escalated,
+                            "nrescalated": tickets[i].nr_escalated,
                             "review": tickets[i].custom_fields.cf_review_with_assignee,                    
-                            "internally escalated": tickets[i].custom_fields.cf_cs_internally_escalated_incidents,
+                            "internallyescalated": tickets[i].custom_fields.cf_cs_internally_escalated_incidents,
                             "status": tickets[i].status,
-                            "group id": tickets[i].group_id,
+                            "groupid": tickets[i].group_id,
                             "created": tickets[i].created_at,
                             "updated": tickets[i].updated_at,
                             "tags": tickets[i].tags,
                             "cc": tickets[i].cc_emails,
                             "fwd": tickets[i].fwd_emails,
-                            "reply_cc": tickets[i].reply_cc_emails,
-                            "ticket_cc": tickets[i].ticket_cc_emails,
-                            "requester_id": tickets[i].requester_id,
-                            "responder_id": tickets[i].responder_id,
-                            "company_id": tickets[i].company_id,
-                            "support_email": tickets[i].support_email,
-                            "to_emails": tickets[i].to_emails,
-                            "product_id": tickets[i].product_id,
-                            "association_type": tickets[i].association_type,
+                            "replycc": tickets[i].reply_cc_emails,
+                            "ticketcc": tickets[i].ticket_cc_emails,
+                            "requesterid": tickets[i].requester_id,
+                            "responderid": tickets[i].responder_id,
+                            "companyid": tickets[i].company_id,
+                            "supportemail": tickets[i].support_email,
+                            "toemails": tickets[i].to_emails,
+                            "productid": tickets[i].product_id,
+                            "associationtype": tickets[i].association_type,
                             "spam": tickets[i].spam,
-                            "email_config_id": tickets[i].email_config_id,
-                            "associated_tickets_count": tickets[i].associated_tickets_count,
+                            "emailconfigid": tickets[i].email_config_id,
+                            "associatedticketscount": tickets[i].associated_tickets_count,
                         });
                     }
                     console.log("loop complete");
